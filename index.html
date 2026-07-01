@@ -3,389 +3,489 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agropecuária e Ferragem Poko Preço</title>
-  <meta name="description" content="Agropecuária e Ferragem Poko Preço em Novo Hamburgo: rações, pet shop, ferragem, jardinagem e utilidades com preço baixo." />
-  <link rel="icon" href="assets/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Poko Preço | Agropecuária e Ferragem em Novo Hamburgo</title>
+  <meta name="description" content="Agropecuária e ferragem em Novo Hamburgo. Rações, acessórios pet, medicamentos, jardinagem, ferramentas, elétrica, hidráulica, tintas e utilidades. Consulte pelo WhatsApp." />
+  <meta name="theme-color" content="#d90000" />
+  <meta property="og:title" content="Poko Preço | Agropecuária e Ferragem" />
+  <meta property="og:description" content="Produtos para pet, agropecuária, ferragem, jardim e casa em Novo Hamburgo. Consulte a disponibilidade pelo WhatsApp." />
+  <meta property="og:image" content="assets/promo-banner.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="topbar" id="inicio">
-    <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="Poko Preço"><img src="assets/logo-poko-preco.png" alt="Agropecuária Poko Preço"></a>
-      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-      <nav class="menu" aria-label="Menu principal">
-        <a class="active" href="#inicio">Início</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Poko Preço - início">
+        <img src="assets/logo-poko-preco.png" alt="Agropecuária Poko Preço" />
+      </a>
+
+      <button class="menu-toggle" type="button" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav class="site-menu" id="siteMenu" aria-label="Menu principal">
+        <a href="#inicio" class="active">Início</a>
         <a href="#sobre">Sobre Nós</a>
         <a href="#produtos">Produtos</a>
         <a href="#servicos">Serviços</a>
         <a href="#promocoes">Promoções</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="phone" href="tel:+555132390191"><span>📞</span><b>(51) 3239-0191</b><small>Novo Hamburgo - RS</small></a>
+
+      <a class="header-phone" href="tel:+555132390191" aria-label="Ligar para a Poko Preço">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path d="M6.6 10.8c1.5 3 3.9 5.4 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.6.6 4 .6.7 0 1.2.5 1.2 1.2v3.5c0 .7-.5 1.2-1.2 1.2C10.7 22 2 13.3 2 2.4 2 1.7 2.5 1.2 3.2 1.2h3.6c.7 0 1.2.5 1.2 1.2 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.3Z"/>
+          </svg>
+        </span>
+        <strong>(51) 3239-0191</strong>
+        <small>Novo Hamburgo - RS</small>
+      </a>
     </div>
+    <div class="yellow-line" aria-hidden="true"></div>
   </header>
 
   <main>
-    <section class="hero">
-      <span class="paw-bg paw-one">🐾</span><span class="paw-bg paw-two">🐾</span>
+    <section class="hero" id="inicio">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Tudo o que seu pet precisa, com o <span>melhor preço</span> da região!</h1>
-          <p>Rações Fortbrain, produtos para pets, ferragem, jardinagem, casa e campo em um só lugar.</p>
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Agropecuária + Ferragem</span>
+          <h1>Produtos para pet, campo, casa e reparos em um só lugar.</h1>
+          <p>
+            A Poko Preço atende Novo Hamburgo com opções para agropecuária, pet shop,
+            jardinagem, ferragem, utilidades e promoções para o dia a dia.
+          </p>
           <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/555132390191?text=Olá,%20vim%20pelo%20site%20da%20Poko%20Preço" target="_blank" rel="noopener">Falar no WhatsApp</a>
-            <a class="btn secondary" href="#produtos">Ver produtos</a>
+            <a class="btn btn-primary" href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20produtos%20dispon%C3%ADveis." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn btn-light" href="#vitrine">Ver vitrine</a>
           </div>
-          <div class="trust-row">
-            <div><i>♡</i><span>Atendimento<br>especializado</span></div>
-            <div><i>✓</i><span>Produtos de<br>qualidade</span></div>
-            <div><i>♧</i><span>Melhor preço<br>da região</span></div>
+          <div class="mini-info" aria-label="Diferenciais da loja">
+            <span>🐾 Pet e agro</span>
+            <span>🔧 Ferragem</span>
+            <span>📍 Novo Hamburgo</span>
           </div>
         </div>
-        <div class="hero-visual"><img src="assets/hero-pets-products.png" alt="Rações Fortbrain" class="hero-img"></div>
+
+        <div class="hero-image reveal">
+          <img src="assets/hero-pets-products.png" alt="Produtos para pet e agropecuária" />
+        </div>
       </div>
     </section>
 
-    <section class="products" id="produtos">
+    <section class="product-lines" id="produtos">
       <div class="container">
-        <p class="eyebrow">Linhas de produtos</p>
-        <h2>Tudo em um só lugar</h2>
-        <div class="cards">
-          <article class="card"><span class="cat-icon red">🐾</span><h3>Pet Shop</h3><p>Rações, acessórios, brinquedos e tudo para o seu pet.</p><a href="#vitrine">Ver mais</a></article>
-          <article class="card"><span class="cat-icon yellow">♞</span><h3>Agropecuária</h3><p>Produtos para animais de produção, aves, equinos e muito mais.</p><a class="yellow" href="#vitrine">Ver mais</a></article>
-          <article class="card"><span class="cat-icon green">♣</span><h3>Jardinagem</h3><p>Ferramentas, vasos, terras e soluções para seu jardim.</p><a class="green" href="#vitrine">Ver mais</a></article>
-          <article class="card"><span class="cat-icon blue">🔧</span><h3>Ferragem</h3><p>Ferramentas, parafusos, fechaduras e materiais de qualidade.</p><a class="blue" href="#vitrine">Ver mais</a></article>
-          <article class="card"><span class="cat-icon purple">⌂</span><h3>Utilidades</h3><p>Produtos para casa, campo e dia a dia com o melhor preço.</p><a class="purple" href="#vitrine">Ver mais</a></article>
-          <article class="card"><span class="cat-icon orange">%</span><h3>Promoções</h3><p>Aproveite nossas ofertas especiais e economize sempre.</p><a class="orange" href="#promocoes">Ver ofertas</a></article>
+        <div class="section-title reveal">
+          <span class="eyebrow">Linhas de produtos</span>
+          <h2>Tudo em um só lugar</h2>
         </div>
 
-        <section class="promo" id="promocoes" aria-label="Melhor preço da região">
-          <img src="assets/promo-banner.png" alt="Banner promocional Poko Preço">
-        </section>
+        <div class="line-grid">
+          <article class="line-card reveal">
+            <div class="line-icon red">🐾</div>
+            <h3>Pet Shop</h3>
+            <p>Rações, acessórios, brinquedos e tudo para o seu pet.</p>
+            <a class="red" href="#vitrine">Ver produtos</a>
+          </article>
+
+          <article class="line-card reveal">
+            <div class="line-icon yellow">🐴</div>
+            <h3>Agropecuária</h3>
+            <p>Produtos para animais de produção, aves, equinos e muito mais.</p>
+            <a class="yellow" href="#vitrine">Ver produtos</a>
+          </article>
+
+          <article class="line-card reveal">
+            <div class="line-icon green">♣</div>
+            <h3>Jardinagem</h3>
+            <p>Ferramentas, vasos, terras e soluções para seu jardim.</p>
+            <a class="green" href="#vitrine">Ver produtos</a>
+          </article>
+
+          <article class="line-card reveal">
+            <div class="line-icon blue">🔧</div>
+            <h3>Ferragem</h3>
+            <p>Ferramentas, parafusos, fechaduras e materiais de qualidade.</p>
+            <a class="blue" href="#vitrine">Ver produtos</a>
+          </article>
+
+          <article class="line-card reveal">
+            <div class="line-icon purple">⌂</div>
+            <h3>Utilidades</h3>
+            <p>Produtos para casa, campo e dia a dia com o melhor preço.</p>
+            <a class="purple" href="#vitrine">Ver produtos</a>
+          </article>
+
+          <article class="line-card reveal">
+            <div class="line-icon orange">%</div>
+            <h3>Promoções</h3>
+            <p>Aproveite nossas ofertas especiais e economize sempre.</p>
+            <a class="orange" href="#promocoes">Ver ofertas</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="about" id="sobre">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <p class="eyebrow left">Sobre nós</p>
-          <h2>Agropecuária e Ferragem Poko Preço</h2>
-          <p>Estamos em Novo Hamburgo oferecendo produtos de qualidade, atendimento próximo e opções para pet, agropecuária, ferragem e jardim.</p>
-          <div class="info-grid">
-            <div><strong>📍</strong><b>Localização</b><span>R. Luxemburgo, 1345<br>Rincão, Novo Hamburgo - RS</span></div>
-            <div><strong>🕘</strong><b>Horário</b><span>Segunda a sexta: 8h às 12h e 13h30 às 19h<br>Sábado: 8h às 12h</span></div>
-            <div><strong>👥</strong><b>Atendimento</b><span>Equipe preparada para ajudar você e seu pet sempre.</span></div>
+    <section class="promo-section" id="promocoes">
+      <div class="container">
+        <figure class="promo-banner reveal">
+          <img src="assets/promo-banner.png" alt="Melhor preço - produtos de qualidade Poko Preço" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="catalog" id="vitrine">
+      <div class="container">
+        <div class="catalog-heading reveal">
+          <div>
+            <span class="eyebrow">Vitrine online</span>
+            <h2>Consulte produtos por categoria</h2>
+            <p>
+              O cliente vê as linhas de produtos, filtra por área e chama a loja no WhatsApp
+              para confirmar valores, marcas e disponibilidade.
+            </p>
+          </div>
+
+          <a class="catalog-help" href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20ajuda%20para%20escolher%20um%20produto." target="_blank" rel="noopener">
+            Pedir ajuda para escolher
+          </a>
+        </div>
+
+        <div class="catalog-tools reveal">
+          <label class="search-box" for="catalogSearch">
+            <span>Buscar produto</span>
+            <input type="search" id="catalogSearch" placeholder="Ex: ração, parafuso, tinta..." autocomplete="off" />
+          </label>
+
+          <div class="filter-buttons" aria-label="Filtrar produtos">
+            <button type="button" class="active" data-filter="todos">Todos</button>
+            <button type="button" data-filter="agro">Agropecuária</button>
+            <button type="button" data-filter="ferragem">Ferragem</button>
+            <button type="button" data-filter="pet">Pet</button>
+            <button type="button" data-filter="casa">Casa e reparos</button>
           </div>
         </div>
-        <div class="store-card"><img src="assets/store-front.png" alt="Fachada da Agropecuária Poko Preço"></div>
+
+        <div class="catalog-grid" id="catalogGrid">
+          <article class="catalog-card" data-category="agro pet" data-search="ração racoes cães caes gatos aves sacos pacotes alimento animal agropecuaria pet">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🐶</span>
+              <span class="catalog-card__badge">Agro/Pet</span>
+            </div>
+            <h3>Rações</h3>
+            <p>Linhas para cães, gatos, aves e outros animais. Consulte marcas, tamanhos e disponibilidade.</p>
+            <div class="catalog-card__chips">
+              <span>cães</span><span>gatos</span><span>aves</span><span>sacos e pacotes</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20as%20ra%C3%A7%C3%B5es%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="pet" data-search="acessorios acessórios pet coleiras potes brinquedos higiene caminhas cachorro gato">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🦴</span>
+              <span class="catalog-card__badge">Pet</span>
+            </div>
+            <h3>Acessórios pet</h3>
+            <p>Itens para rotina dos animais: coleiras, potes, brinquedos, caminhas e higiene.</p>
+            <div class="catalog-card__chips">
+              <span>coleiras</span><span>brinquedos</span><span>higiene</span><span>potes</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20acess%C3%B3rios%20pet%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="agro pet" data-search="medicamentos cuidado animal anti pulgas antipulgas higiene consulta agro pet">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">💊</span>
+              <span class="catalog-card__badge">Agro/Pet</span>
+            </div>
+            <h3>Medicamentos e cuidados</h3>
+            <p>Produtos de cuidado animal conforme orientação e disponibilidade da loja.</p>
+            <div class="catalog-card__chips">
+              <span>anti-pulgas</span><span>cuidados</span><span>higiene</span><span>consulta</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20medicamentos%20e%20cuidados%20para%20animais%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="agro casa" data-search="jardinagem jardim terra vasos plantas horta patio pátio campo">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🌱</span>
+              <span class="catalog-card__badge">Jardim</span>
+            </div>
+            <h3>Jardinagem</h3>
+            <p>Itens para cuidar do pátio, horta, vasos e plantas da casa.</p>
+            <div class="catalog-card__chips">
+              <span>terra</span><span>vasos</span><span>jardim</span><span>plantas</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20itens%20de%20jardinagem%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="agro" data-search="sementes adubos fertilizantes horta campo plantio agropecuaria">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🌽</span>
+              <span class="catalog-card__badge">Agro</span>
+            </div>
+            <h3>Sementes e adubos</h3>
+            <p>Produtos para pequenos cultivos, horta, campo e cuidados com plantas.</p>
+            <div class="catalog-card__chips">
+              <span>sementes</span><span>adubos</span><span>horta</span><span>plantio</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20sementes%20e%20adubos%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="agro" data-search="produtos rurais campo baldes cordas mangueiras pulverizadores agropecuaria">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🚜</span>
+              <span class="catalog-card__badge">Agro</span>
+            </div>
+            <h3>Produtos rurais</h3>
+            <p>Itens de apoio para rotina no campo, pátio, criação e pequenos serviços rurais.</p>
+            <div class="catalog-card__chips">
+              <span>baldes</span><span>cordas</span><span>mangueiras</span><span>campo</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20produtos%20rurais%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="ferragem casa" data-search="ferramentas manuais chave alicate martelo trena ferramentas ferragem">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🔧</span>
+              <span class="catalog-card__badge">Ferragem</span>
+            </div>
+            <h3>Ferramentas manuais</h3>
+            <p>Ferramentas para pequenos reparos, montagem, manutenção e uso doméstico.</p>
+            <div class="catalog-card__chips">
+              <span>chaves</span><span>alicates</span><span>martelos</span><span>trenas</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20as%20ferramentas%20manuais%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="ferragem casa" data-search="parafusos fixadores buchas pregos porcas arruelas ferragem casa reparos">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🔩</span>
+              <span class="catalog-card__badge">Ferragem</span>
+            </div>
+            <h3>Parafusos e fixadores</h3>
+            <p>Itens variados para montagem, reparos e manutenção do dia a dia.</p>
+            <div class="catalog-card__chips">
+              <span>parafusos</span><span>buchas</span><span>pregos</span><span>porcas</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20parafusos%20e%20fixadores%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="ferragem casa" data-search="eletrica elétrica lampadas lâmpadas tomadas fios extensoes extensões plugues interruptores ferragem">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">💡</span>
+              <span class="catalog-card__badge">Elétrica</span>
+            </div>
+            <h3>Elétrica básica</h3>
+            <p>Materiais simples para reposição, instalação e manutenção elétrica doméstica.</p>
+            <div class="catalog-card__chips">
+              <span>tomadas</span><span>fios</span><span>lâmpadas</span><span>extensões</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20materiais%20de%20el%C3%A9trica%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="ferragem casa" data-search="hidraulica hidráulica conexoes conexões torneiras vedacao vedação mangueiras canos reparos ferragem">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🚰</span>
+              <span class="catalog-card__badge">Hidráulica</span>
+            </div>
+            <h3>Hidráulica</h3>
+            <p>Conexões, reparos e itens básicos para pequenos consertos hidráulicos.</p>
+            <div class="catalog-card__chips">
+              <span>conexões</span><span>torneiras</span><span>vedação</span><span>mangueiras</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20itens%20de%20hidr%C3%A1ulica%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="ferragem casa" data-search="tintas pintura pinceis pincéis rolos fitas acabamento retoques manutenção casa ferragem">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🎨</span>
+              <span class="catalog-card__badge">Pintura</span>
+            </div>
+            <h3>Tintas e pintura</h3>
+            <p>Produtos para pintura, acabamento, retoques e manutenção da casa.</p>
+            <div class="catalog-card__chips">
+              <span>tintas</span><span>pincéis</span><span>rolos</span><span>fitas</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20tintas%20e%20produtos%20de%20pintura%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+          <article class="catalog-card" data-category="casa ferragem" data-search="utilidades casa reparos limpeza organizacao organização uso diario diário ferragem">
+            <div class="catalog-card__top">
+              <span class="catalog-card__icon" aria-hidden="true">🏠</span>
+              <span class="catalog-card__badge">Casa</span>
+            </div>
+            <h3>Utilidades para casa</h3>
+            <p>Itens variados para resolver pequenas necessidades do dia a dia.</p>
+            <div class="catalog-card__chips">
+              <span>reparos</span><span>limpeza</span><span>organização</span><span>uso diário</span>
+            </div>
+            <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20utilidades%20para%20casa%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar no WhatsApp</a>
+          </article>
+        </div>
+
+        <p class="empty-message" id="emptyMessage">Nenhum item encontrado. Tente buscar por outra palavra ou chame a loja no WhatsApp.</p>
       </div>
     </section>
 
-    <!-- =========================================================
-NOVA SEÇÃO: VITRINE AGROPECUÁRIA + FERRAGEM
-Cole esta seção no index.html, de preferência antes da seção "A loja" ou antes do "Contato".
-Não altera header, logo, rodapé, contatos ou estrutura já aprovada.
-========================================================= -->
-<section class="pp-catalogo" id="vitrine">
-  <div class="pp-catalogo__container">
-    <div class="pp-catalogo__topo">
-      <div>
-        <span class="pp-catalogo__tag">Agropecuária + Ferragem</span>
-        <h2>Encontre produtos para pets, campo, casa e reparos em um só lugar.</h2>
-        <p>
-          O cliente vê as linhas de produtos, filtra por área e chama a loja no WhatsApp
-          para confirmar valores, marcas e disponibilidade.
-        </p>
+    <section class="about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow">Sobre a Poko Preço</span>
+          <h2>Agropecuária e ferragem em Novo Hamburgo.</h2>
+          <p>
+            Produtos para pet, agropecuária, ferragem, jardim e utilidades,
+            com atendimento próximo para ajudar na escolha do item certo.
+          </p>
+        </div>
+
+        <div class="about-cards reveal">
+          <article class="about-card">
+            <div class="about-icon">📍</div>
+            <div>
+              <h3>Localização</h3>
+              <p>R. Luxemburgo, 1345<br>Rincão, Novo Hamburgo - RS</p>
+            </div>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon">🕘</div>
+            <div>
+              <h3>Horário</h3>
+              <p>Segunda a sexta: 8h às 12h e 13h30 às 19h<br>Sábado: 8h às 12h</p>
+            </div>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon">💬</div>
+            <div>
+              <h3>Atendimento</h3>
+              <p>Equipe preparada para ajudar você a encontrar produtos para casa, pet, campo e reparos.</p>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <a
-        class="pp-catalogo__ajuda"
-        href="https://wa.me/5551999519866?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20quero%20ajuda%20para%20escolher%20um%20produto."
-        target="_blank"
-        rel="noopener"
-      >
-        Pedir ajuda para escolher
-      </a>
-    </div>
-
-    <div class="pp-catalogo__barra">
-      <label class="pp-catalogo__busca">
-        <span>Buscar produto</span>
-        <input
-          type="search"
-          id="ppBuscaProduto"
-          placeholder="Ex: ração, parafuso, tinta..."
-          autocomplete="off"
-        />
-      </label>
-
-      <div class="pp-catalogo__filtros" aria-label="Filtrar produtos por categoria">
-        <button type="button" class="is-active" data-pp-filter="todos">Todos</button>
-        <button type="button" data-pp-filter="agro">Agropecuária</button>
-        <button type="button" data-pp-filter="ferragem">Ferragem</button>
-        <button type="button" data-pp-filter="pet">Pet</button>
-        <button type="button" data-pp-filter="casa">Casa e reparos</button>
+    <section class="store-photo-section">
+      <div class="container store-grid">
+        <div class="store-copy reveal">
+          <span class="eyebrow">A loja</span>
+          <h2>Atendimento de bairro com variedade para o dia a dia.</h2>
+          <p>
+            A página funciona como uma vitrine simples: mostra as principais linhas de produtos
+            e leva o cliente direto para o WhatsApp, sem precisar montar um e-commerce completo agora.
+          </p>
+        </div>
+        <figure class="store-photo reveal">
+          <img src="assets/store-front.png" alt="Fachada da Poko Preço em Novo Hamburgo" />
+        </figure>
       </div>
-    </div>
+    </section>
 
-    <div class="pp-catalogo__grid" id="ppListaProdutos">
-      <article class="pp-produto" data-pp-category="agro pet" data-pp-tags="ração racoes cães gatos aves sacos pacotes alimento animal agropecuaria pet">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🐶</span>
-          <span class="pp-produto__badge">Agro/Pet</span>
-        </div>
-        <h3>Rações</h3>
-        <p>Linhas para cães, gatos, aves e outros animais. Consulte marcas, tamanhos e disponibilidade.</p>
-        <div class="pp-produto__tags">
-          <span>cães</span><span>gatos</span><span>aves</span><span>sacos e pacotes</span>
-        </div>
-        <!-- Rações -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20as%20ra%C3%A7%C3%B5es%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
+    <section class="service-section" id="servicos">
+      <div class="container service-grid">
+        <article class="service-card reveal">
+          <strong>01</strong>
+          <h3>Consulta pelo WhatsApp</h3>
+          <p>O cliente chama a loja para confirmar valor, marca e disponibilidade.</p>
+        </article>
+        <article class="service-card reveal">
+          <strong>02</strong>
+          <h3>Produtos por categoria</h3>
+          <p>Agro, pet, ferragem, casa e reparos ficam organizados em uma vitrine simples.</p>
+        </article>
+        <article class="service-card reveal">
+          <strong>03</strong>
+          <h3>Evolução futura</h3>
+          <p>Depois pode virar catálogo administrável, estoque, carrinho ou e-commerce.</p>
+        </article>
+      </div>
+    </section>
 
-      <article class="pp-produto" data-pp-category="pet" data-pp-tags="acessorios pet coleiras potes brinquedos higiene caminhas cachorro gato">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🦴</span>
-          <span class="pp-produto__badge">Pet</span>
+    <section class="contact-section" id="contato">
+      <div class="container contact-box reveal">
+        <div class="section-title">
+          <span class="eyebrow">Fale conosco</span>
+          <h2>Estamos prontos para te atender!</h2>
         </div>
-        <h3>Acessórios pet</h3>
-        <p>Itens para rotina dos animais: coleiras, potes, brinquedos, caminhas e higiene.</p>
-        <div class="pp-produto__tags">
-          <span>coleiras</span><span>brinquedos</span><span>higiene</span><span>potes</span>
-        </div>
-        <!-- Acessórios pet -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20acess%C3%B3rios%20pet%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
 
-      <article class="pp-produto" data-pp-category="agro pet" data-pp-tags="medicamentos cuidado animal anti pulgas higiene consulta agro pet">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">💊</span>
-          <span class="pp-produto__badge">Agro/Pet</span>
-        </div>
-        <h3>Medicamentos e cuidados</h3>
-        <p>Produtos de cuidado animal conforme orientação e disponibilidade da loja.</p>
-        <div class="pp-produto__tags">
-          <span>anti-pulgas</span><span>cuidados</span><span>higiene</span><span>consulta</span>
-        </div>
-        <!-- Medicamentos e cuidados para animais -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20medicamentos%20e%20cuidados%20para%20animais%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="agro casa" data-pp-tags="jardinagem jardim terra vasos plantas horta patio campo">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🌱</span>
-          <span class="pp-produto__badge">Jardim</span>
-        </div>
-        <h3>Jardinagem</h3>
-        <p>Itens para cuidar do pátio, horta, vasos e plantas da casa.</p>
-        <div class="pp-produto__tags">
-          <span>terra</span><span>vasos</span><span>jardim</span><span>plantas</span>
-        </div>
-        <!-- Jardinagem -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20itens%20de%20jardinagem%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="agro" data-pp-tags="sementes adubos fertilizantes horta campo plantio agropecuaria">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🌽</span>
-          <span class="pp-produto__badge">Agro</span>
-        </div>
-        <h3>Sementes e adubos</h3>
-        <p>Produtos para pequenos cultivos, horta, campo e cuidados com plantas.</p>
-        <div class="pp-produto__tags">
-          <span>sementes</span><span>adubos</span><span>horta</span><span>plantio</span>
-        </div>
-        <!-- Sementes e adubos -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20sementes%20e%20adubos%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="agro" data-pp-tags="produtos rurais campo baldes cordas mangueiras pulverizadores agropecuaria">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🚜</span>
-          <span class="pp-produto__badge">Agro</span>
-        </div>
-        <h3>Produtos rurais</h3>
-        <p>Itens de apoio para rotina no campo, pátio, criação e pequenos serviços rurais.</p>
-        <div class="pp-produto__tags">
-          <span>baldes</span><span>cordas</span><span>mangueiras</span><span>campo</span>
-        </div>
-        <!-- Produtos rurais -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20os%20produtos%20rurais%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="ferragem casa" data-pp-tags="ferramentas manuais chave alicate martelo trena ferramentas ferragem">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🔧</span>
-          <span class="pp-produto__badge">Ferragem</span>
-        </div>
-        <h3>Ferramentas manuais</h3>
-        <p>Ferramentas para pequenos reparos, montagem, manutenção e uso doméstico.</p>
-        <div class="pp-produto__tags">
-          <span>chaves</span><span>alicates</span><span>martelos</span><span>trenas</span>
-        </div>
-        <!-- Ferramentas manuais -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20as%20ferramentas%20manuais%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="ferragem casa" data-pp-tags="parafusos fixadores buchas pregos porcas arruelas ferragem casa reparos">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🔩</span>
-          <span class="pp-produto__badge">Ferragem</span>
-        </div>
-        <h3>Parafusos e fixadores</h3>
-        <p>Itens variados para montagem, reparos e manutenção do dia a dia.</p>
-        <div class="pp-produto__tags">
-          <span>parafusos</span><span>buchas</span><span>pregos</span><span>porcas</span>
-        </div>
-        <!-- Parafusos e fixadores -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20parafusos%20e%20fixadores%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="ferragem casa" data-pp-tags="eletrica lampadas tomadas fios extensoes plugues interruptores ferragem">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">💡</span>
-          <span class="pp-produto__badge">Elétrica</span>
-        </div>
-        <h3>Elétrica básica</h3>
-        <p>Materiais simples para reposição, instalação e manutenção elétrica doméstica.</p>
-        <div class="pp-produto__tags">
-          <span>tomadas</span><span>fios</span><span>lâmpadas</span><span>extensões</span>
-        </div>
-        <!-- Elétrica -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20materiais%20de%20el%C3%A9trica%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="ferragem casa" data-pp-tags="hidraulica conexoes torneiras vedacao mangueiras canos reparos ferragem">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🚰</span>
-          <span class="pp-produto__badge">Hidráulica</span>
-        </div>
-        <h3>Hidráulica</h3>
-        <p>Conexões, reparos e itens básicos para pequenos consertos hidráulicos.</p>
-        <div class="pp-produto__tags">
-          <span>conexões</span><span>torneiras</span><span>vedação</span><span>mangueiras</span>
-        </div>
-        <!-- Hidráulica -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20itens%20de%20hidr%C3%A1ulica%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="ferragem casa" data-pp-tags="tintas pintura pinceis rolos fitas acabamento retoques manutenção casa ferragem">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🎨</span>
-          <span class="pp-produto__badge">Pintura</span>
-        </div>
-        <h3>Tintas e pintura</h3>
-        <p>Produtos para pintura, acabamento, retoques e manutenção da casa.</p>
-        <div class="pp-produto__tags">
-          <span>tintas</span><span>pincéis</span><span>rolos</span><span>fitas</span>
-        </div>
-        <!-- Tintas e pintura -->
-<a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20tintas%20e%20produtos%20de%20pintura%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-
-      <article class="pp-produto" data-pp-category="casa ferragem" data-pp-tags="utilidades casa reparos limpeza organizacao uso diario ferragem">
-        <div class="pp-produto__head">
-          <span class="pp-produto__icone">🏠</span>
-          <span class="pp-produto__badge">Casa</span>
-        </div>
-        <h3>Utilidades para casa</h3>
-        <p>Itens variados para resolver pequenas necessidades do dia a dia.</p>
-        <div class="pp-produto__tags">
-          <span>reparos</span><span>limpeza</span><span>organização</span><span>uso diário</span>
-        </div>
-        <!-- Utilidades para casa -->
-        <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20consultar%20utilidades%20para%20casa%20dispon%C3%ADveis." target="_blank" rel="noopener">
-          Consultar no WhatsApp
-        </a>
-      </article>
-    </div>
-
-    <p class="pp-catalogo__vazio" id="ppMensagemVazia">
-      Nenhum item encontrado. Tente buscar por outra palavra ou chame a loja no WhatsApp.
-    </p>
-  </div>
-</section>
-
-    <section class="contact" id="contato">
-      <div class="container contact-box">
-        <p class="eyebrow">Fale conosco</p>
-        <h2>Estamos prontos para te atender!</h2>
         <div class="contact-grid">
+          <a href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener">
+            <strong class="whatsapp" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M12.04 2.02A9.86 9.86 0 0 0 2.2 11.86c0 1.73.45 3.42 1.31 4.91L2.1 21.98l5.34-1.4a9.8 9.8 0 0 0 4.6 1.16h.01a9.86 9.86 0 0 0-.01-19.72Zm0 18.05h-.01a8.15 8.15 0 0 1-4.15-1.14l-.3-.18-3.17.83.85-3.09-.2-.32a8.15 8.15 0 1 1 6.98 3.9Zm4.47-6.1c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.38.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/>
+              </svg>
+            </strong>
+            <b>WhatsApp</b>
+            <span>(51) 3239-0191</span>
+          </a>
 
-  <a href="https://wa.me/555132390191" target="_blank" rel="noopener">
-    <strong class="whats">
-      <i class="fa-brands fa-whatsapp"></i>
-    </strong>
-    <b>WhatsApp</b>
-    <span>(51) 3239-0191</span>
-  </a>
+          <a href="tel:+555132390191">
+            <strong class="telephone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M6.6 10.8c1.5 3 3.9 5.4 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.6.6 4 .6.7 0 1.2.5 1.2 1.2v3.5c0 .7-.5 1.2-1.2 1.2C10.7 22 2 13.3 2 2.4 2 1.7 2.5 1.2 3.2 1.2h3.6c.7 0 1.2.5 1.2 1.2 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.3Z"/>
+              </svg>
+            </strong>
+            <b>Telefone</b>
+            <span>(51) 3239-0191</span>
+          </a>
 
-  <a href="tel:+555132390191">
-    <strong class="phone">
-      <i class="fa-solid fa-phone"></i>
-    </strong>
-    <b>Telefone</b>
-    <span>(51) 3239-0191</span>
-  </a>
+          <a href="https://www.instagram.com/precopoko/" target="_blank" rel="noopener">
+            <strong class="instagram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.4A4.6 4.6 0 1 1 7.4 12 4.6 4.6 0 0 1 12 7.4Zm0 2A2.6 2.6 0 1 0 14.6 12 2.6 2.6 0 0 0 12 9.4Zm5.2-2.85a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05Z"/>
+              </svg>
+            </strong>
+            <b>Instagram</b>
+            <span>@precopoko</span>
+          </a>
 
-  <a href="https://instagram.com/precopoko" target="_blank" rel="noopener">
-    <strong class="insta">
-      <i class="fa-brands fa-instagram"></i>
-    </strong>
-    <b>Instagram</b>
-    <span>@precopoko</span>
-  </a>
-
-  <a href="https://www.google.com/maps/search/?api=1&query=R.%20Luxemburgo%201345%20Novo%20Hamburgo%20RS" target="_blank" rel="noopener">
-    <strong class="maps">
-      <i class="fa-solid fa-location-dot"></i>
-    </strong>
-    <b>Endereço</b>
-    <span>R. Luxemburgo, 1345<br>Rincão, Novo Hamburgo - RS</span>
-  </a>
-
-</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=R.%20Luxemburgo%2C%201345%20-%20Rinc%C3%A3o%2C%20Novo%20Hamburgo%20-%20RS" target="_blank" rel="noopener">
+            <strong class="address" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M12 2a7.2 7.2 0 0 0-7.2 7.2c0 5.1 7.2 12.8 7.2 12.8s7.2-7.7 7.2-12.8A7.2 7.2 0 0 0 12 2Zm0 9.8a2.6 2.6 0 1 1 2.6-2.6 2.6 2.6 0 0 1-2.6 2.6Z"/>
+              </svg>
+            </strong>
+            <b>Endereço</b>
+            <span>R. Luxemburgo, 1345<br>Rincão, Novo Hamburgo - RS</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container footer-grid">
-      <img src="assets/logo-poko-preco.png" alt="Poko Preço">
-      <div><b>Links rápidos</b><a href="#inicio">Início</a><a href="#sobre">Sobre Nós</a><a href="#produtos">Produtos</a><a href="#promocoes">Promoções</a><a href="#contato">Contato</a></div>
-      <div><b>Categorias</b><a>Pet Shop</a><a>Agropecuária</a><a>Jardinagem</a><a>Ferragem</a><a>Utilidades</a></div>
-      <div><b>Siga-nos</b><a href="https://instagram.com/precopoko" target="_blank" rel="noopener">@precopoko</a><p>Acompanhe nossas novidades e promoções!</p></div>
+      <div class="footer-brand">
+        <img src="assets/logo-poko-preco.png" alt="Poko Preço" />
+      </div>
+
+      <div>
+        <h3>Links rápidos</h3>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#promocoes">Promoções</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div>
+        <h3>Categorias</h3>
+        <a href="#vitrine">Pet Shop</a>
+        <a href="#vitrine">Agropecuária</a>
+        <a href="#vitrine">Jardinagem</a>
+        <a href="#vitrine">Ferragem</a>
+        <a href="#vitrine">Utilidades</a>
+      </div>
+
+      <div>
+        <h3>Siga-nos</h3>
+        <a href="https://www.instagram.com/precopoko/" target="_blank" rel="noopener">@precopoko</a>
+        <p>Acompanhe nossas novidades e promoções!</p>
+      </div>
     </div>
-    <div class="copy">© 2026 Agropecuária e Ferragem Poko Preço. Todos os direitos reservados.</div>
+    <div class="footer-copy">© 2026 Agropecuária e Ferragem Poko Preço. Todos os direitos reservados.</div>
   </footer>
 
-  <a class="float-whats" href="https://wa.me/555132390191?text=Olá,%20vim%20pelo%20site%20da%20Poko%20Preço" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
+  <a class="floating-whatsapp" href="https://wa.me/5551999519866?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Poko%20Pre%C3%A7o%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+      <path d="M12.04 2.02A9.86 9.86 0 0 0 2.2 11.86c0 1.73.45 3.42 1.31 4.91L2.1 21.98l5.34-1.4a9.8 9.8 0 0 0 4.6 1.16h.01a9.86 9.86 0 0 0-.01-19.72Zm0 18.05h-.01a8.15 8.15 0 0 1-4.15-1.14l-.3-.18-3.17.83.85-3.09-.2-.32a8.15 8.15 0 1 1 6.98 3.9Zm4.47-6.1c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.38.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/>
+    </svg>
+  </a>
+
   <script src="script.js"></script>
 </body>
 </html>
